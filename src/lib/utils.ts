@@ -3,7 +3,7 @@ import type { Photo } from './types';
 export async function getAllPhotos() {
   try {
     // Step 1: Fetch the list of albums
-    const albumsResponse = await fetch('http://localhost:5173/api/photos');
+    const albumsResponse = await fetch('https://photos-eight-beta.vercel.app/api/photos');
     const albumsData = await albumsResponse.json();
     console.log('Albums fetched:', albumsData); // Log the albums
 
