@@ -3,7 +3,7 @@ import type { Photo } from './types';
 export async function getAllPhotos() {
   try {
     // Step 1: Fetch the list of albums
-    const albumsResponse = await fetch('https://photos-eight-beta.vercel.app/api/photos');
+    const albumsResponse = await fetch('/api/photos');
     const albumsData = await albumsResponse.json();
     console.log('Albums fetched:', albumsData); // Log the albums
 
@@ -14,7 +14,7 @@ export async function getAllPhotos() {
     // Step 2: Fetch photos from each album
     const allPhotos: Photo[] = [];
     for (const album of albumsData.albums) {
-      const photosResponse = await fetch(`https://photos-eight-beta.vercel.app/photos?album=${album}`);
+      const photosResponse = await fetch(`/photos?album=${album}`);
       const photosData = await photosResponse.json();
       console.log(`Photos for album "${album}":`, photosData); // Log the photos for each album
 
@@ -43,7 +43,7 @@ export async function getPhotosByAlbum(album: string) {
       throw new Error('Invalid album name');
     }
 
-    const response = await fetch(`https://photos-eight-beta.vercel.app/api/photos?album=${album}`);
+    const response = await fetch(`/api/photos?album=${album}`);
     const data = await response.json();
 
     if (!data.photos || !Array.isArray(data.photos)) {

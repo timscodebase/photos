@@ -14,7 +14,7 @@
   // Fetch the list of albums
   async function fetchAlbums() {
     try {
-      const response = await fetch('https://photos-eight-beta.vercel.app/api/photos');
+      const response = await fetch('/api/photos');
       const data = await response.json();
       albums = data.albums || [];
     } catch (err) {
