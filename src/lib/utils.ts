@@ -14,7 +14,7 @@ export async function getAllPhotos() {
     // Step 2: Fetch photos from each album
     const allPhotos: Photo[] = [];
     for (const album of albumsData.albums) {
-      const photosResponse = await fetch(`http://localhost:5173/api/photos?album=${album}`);
+      const photosResponse = await fetch(`https://photos-eight-beta.vercel.app/photos?album=${album}`);
       const photosData = await photosResponse.json();
       console.log(`Photos for album "${album}":`, photosData); // Log the photos for each album
 
@@ -43,7 +43,7 @@ export async function getPhotosByAlbum(album: string) {
       throw new Error('Invalid album name');
     }
 
-    const response = await fetch(`http://localhost:5173/api/photos?album=${album}`);
+    const response = await fetch(`https://photos-eight-beta.vercel.app/api/photos?album=${album}`);
     const data = await response.json();
 
     if (!data.photos || !Array.isArray(data.photos)) {
