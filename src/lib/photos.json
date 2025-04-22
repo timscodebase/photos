@@ -1,0 +1,276 @@
+{
+  "albums": [
+    "2025-04-01",
+    "2025-24-04"
+  ],
+  "photos": {
+    "2025-04-01": [
+      {
+        "id": "2025-04-01-IMG_7886.JPG",
+        "src": "/photos/2025-04-01/IMG_7886.JPG",
+        "name": "IMG_7886.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_7906.JPG",
+        "src": "/photos/2025-04-01/IMG_7906.JPG",
+        "name": "IMG_7906.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_7916.JPG",
+        "src": "/photos/2025-04-01/IMG_7916.JPG",
+        "name": "IMG_7916.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_7921.JPG",
+        "src": "/photos/2025-04-01/IMG_7921.JPG",
+        "name": "IMG_7921.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_7932.JPG",
+        "src": "/photos/2025-04-01/IMG_7932.JPG",
+        "name": "IMG_7932.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_7947.JPG",
+        "src": "/photos/2025-04-01/IMG_7947.JPG",
+        "name": "IMG_7947.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_7962.JPG",
+        "src": "/photos/2025-04-01/IMG_7962.JPG",
+        "name": "IMG_7962.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_7963.JPG",
+        "src": "/photos/2025-04-01/IMG_7963.JPG",
+        "name": "IMG_7963.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_7964.JPG",
+        "src": "/photos/2025-04-01/IMG_7964.JPG",
+        "name": "IMG_7964.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_7965.JPG",
+        "src": "/photos/2025-04-01/IMG_7965.JPG",
+        "name": "IMG_7965.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_7966.JPG",
+        "src": "/photos/2025-04-01/IMG_7966.JPG",
+        "name": "IMG_7966.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_7971.JPG",
+        "src": "/photos/2025-04-01/IMG_7971.JPG",
+        "name": "IMG_7971.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_7988.JPG",
+        "src": "/photos/2025-04-01/IMG_7988.JPG",
+        "name": "IMG_7988.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_7994.JPG",
+        "src": "/photos/2025-04-01/IMG_7994.JPG",
+        "name": "IMG_7994.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_8003.JPG",
+        "src": "/photos/2025-04-01/IMG_8003.JPG",
+        "name": "IMG_8003.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_8004.JPG",
+        "src": "/photos/2025-04-01/IMG_8004.JPG",
+        "name": "IMG_8004.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_8008.JPG",
+        "src": "/photos/2025-04-01/IMG_8008.JPG",
+        "name": "IMG_8008.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_8042.JPG",
+        "src": "/photos/2025-04-01/IMG_8042.JPG",
+        "name": "IMG_8042.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_8048.JPG",
+        "src": "/photos/2025-04-01/IMG_8048.JPG",
+        "name": "IMG_8048.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_8053.JPG",
+        "src": "/photos/2025-04-01/IMG_8053.JPG",
+        "name": "IMG_8053.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_8061.JPG",
+        "src": "/photos/2025-04-01/IMG_8061.JPG",
+        "name": "IMG_8061.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_8088.JPG",
+        "src": "/photos/2025-04-01/IMG_8088.JPG",
+        "name": "IMG_8088.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_8093.JPG",
+        "src": "/photos/2025-04-01/IMG_8093.JPG",
+        "name": "IMG_8093.JPG",
+        "album": "2025-04-01"
+      },
+      {
+        "id": "2025-04-01-IMG_8111.JPG",
+        "src": "/photos/2025-04-01/IMG_8111.JPG",
+        "name": "IMG_8111.JPG",
+        "album": "2025-04-01"
+      }
+    ],
+    "2025-24-04": [
+      {
+        "id": "2025-24-04-IMG_6943.JPG",
+        "src": "/photos/2025-24-04/IMG_6943.JPG",
+        "name": "IMG_6943.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_6978.JPG",
+        "src": "/photos/2025-24-04/IMG_6978.JPG",
+        "name": "IMG_6978.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7038.JPG",
+        "src": "/photos/2025-24-04/IMG_7038.JPG",
+        "name": "IMG_7038.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7104.JPG",
+        "src": "/photos/2025-24-04/IMG_7104.JPG",
+        "name": "IMG_7104.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7204.JPG",
+        "src": "/photos/2025-24-04/IMG_7204.JPG",
+        "name": "IMG_7204.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7347.JPG",
+        "src": "/photos/2025-24-04/IMG_7347.JPG",
+        "name": "IMG_7347.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7358.JPG",
+        "src": "/photos/2025-24-04/IMG_7358.JPG",
+        "name": "IMG_7358.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7477.JPG",
+        "src": "/photos/2025-24-04/IMG_7477.JPG",
+        "name": "IMG_7477.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7615.JPG",
+        "src": "/photos/2025-24-04/IMG_7615.JPG",
+        "name": "IMG_7615.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7666.JPG",
+        "src": "/photos/2025-24-04/IMG_7666.JPG",
+        "name": "IMG_7666.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7670.jpg",
+        "src": "/photos/2025-24-04/IMG_7670.jpg",
+        "name": "IMG_7670.jpg",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7689.jpg",
+        "src": "/photos/2025-24-04/IMG_7689.jpg",
+        "name": "IMG_7689.jpg",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7707.JPG",
+        "src": "/photos/2025-24-04/IMG_7707.JPG",
+        "name": "IMG_7707.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7721.JPG",
+        "src": "/photos/2025-24-04/IMG_7721.JPG",
+        "name": "IMG_7721.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7735.JPG",
+        "src": "/photos/2025-24-04/IMG_7735.JPG",
+        "name": "IMG_7735.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7754.JPG",
+        "src": "/photos/2025-24-04/IMG_7754.JPG",
+        "name": "IMG_7754.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7794.JPG",
+        "src": "/photos/2025-24-04/IMG_7794.JPG",
+        "name": "IMG_7794.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7826.JPG",
+        "src": "/photos/2025-24-04/IMG_7826.JPG",
+        "name": "IMG_7826.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7838.JPG",
+        "src": "/photos/2025-24-04/IMG_7838.JPG",
+        "name": "IMG_7838.JPG",
+        "album": "2025-24-04"
+      },
+      {
+        "id": "2025-24-04-IMG_7853.JPG",
+        "src": "/photos/2025-24-04/IMG_7853.JPG",
+        "name": "IMG_7853.JPG",
+        "album": "2025-24-04"
+      }
+    ]
+  }
+}

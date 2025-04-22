@@ -2,26 +2,30 @@
   import { getPhotosByAlbum } from "$lib/utils";
   import type { Photo } from "$lib/types";
   import { page } from "$app/stores";
-  
+
   let photos: Photo[] = [];
   let albums: string[] = [];
   let error: string | null = null;
   let loading = true;
-  
+
   // Get the album parameter from the URL
   $: album = $page.params.album;
-  
+
   // Fetch the list of albums
   async function fetchAlbums() {
     try {
       const response = await fetch('/api/photos');
+      if (!response.ok) {
+        throw new Error(`Failed to fetch albums: ${response.status} ${response.statusText}`);
+      }
       const data = await response.json();
       albums = data.albums || [];
+      console.log('Fetched albums:', albums);
     } catch (err) {
       console.error('Error fetching albums:', err);
     }
   }
-  
+
   // Fetch photos for the album
   async function loadPhotos() {
     if (!album) {
@@ -41,7 +45,7 @@
       loading = false;
     }
   }
-  
+
   // Load albums and photos on mount or when album changes
   fetchAlbums();
   $: if (album) {
@@ -60,13 +64,18 @@
     <div class="photos">
       {#each photos as photo}
         <a href={`/photos/${album}/${photo.id}`}>
-          <img class="photo" src={photo.src} alt={photo.name} />
+          <img
+            class="photo"
+            src={photo.src}
+            alt={photo.name}
+            on:error={() => console.error(`Failed to load image: ${photo.src}`)}
+          />
         </a>
       {/each}
     </div>
   {/if}
 </div>
-  
+
 <style>
   .photos {
     display: grid;

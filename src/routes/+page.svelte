@@ -1,59 +1,93 @@
 <script lang="ts">
-  const data = fetch("/api/photos")
-    .then((response) => response.json())
-    .then((data) => data.photos);
+  import type { Photo } from "$lib/types";
 
-  // get a list of albums from data.photos
-  const albums = data
-    .then((photos) => {
-      const albumSet = new Set();
-      photos.forEach((photo) => {
-        if (photo.album) {
-          albumSet.add(photo.album);
-        }
-      });
-      return Array.from(albumSet);
-    })
-    .catch((error) => {
-      console.error("Error fetching albums:", error);
-    });
+  let albums: string[] = [];
+  let error: string | null = null;
+  let loading = true;
+
+  // Fetch the list of albums
+  async function fetchAlbums() {
+    try {
+      loading = true;
+      const response = await fetch('/api/photos'); // Relative URL
+      if (!response.ok) {
+        throw new Error(`Failed to fetch albums: ${response.status} ${response.statusText}`);
+      }
+      const data = await response.json();
+      albums = data.albums || [];
+      console.log('Fetched albums:', albums);
+    } catch (err) {
+      error = err instanceof Error ? err.message : "An unknown error occurred";
+      console.error('Error fetching albums:', err);
+    } finally {
+      loading = false;
+    }
+  }
+
+  // Load albums on mount
+  fetchAlbums();
 </script>
 
-<h1>Albums</h1>
-<ul>
-  {#await albums}
-    <p>Loading...</p>
-  {:then albums}
-    {#each albums as album}
-      <li><a href="/photos/{album}">{album}</a></li>
-    {/each}
-  {:catch error}
-    <p>Error: {error.message}</p>
-  {/await}
-</ul>
+<div class="home">
+  <h1>Photo Gallery</h1>
 
-<div class="photos">
-  {#await data}
-    <p>Loading...</p>
-  {:then photos}
-    {#each photos as photo}
-      <img class="photo" src={photo.src} alt={photo.name} />
-    {/each}
-  {:catch error}
-    <p>Error: {error.message}</p>
-  {/await}
+  {#if loading}
+    <p>Loading albums...</p>
+  {:else if error}
+    <p>Error: {error}</p>
+  {:else if albums.length === 0}
+    <p>No albums found.</p>
+  {:else}
+    <div class="album-grid">
+      {#each albums as album}
+        <a href={`/photos/${album}`} class="album-card">
+          <h2>{album}</h2>
+          <p>View photos</p>
+        </a>
+      {/each}
+    </div>
+  {/if}
 </div>
 
 <style>
-  .photos {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 0.5rem;
+  .home {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  .photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .album-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+
+  .album-card:hover {
+    background-color: #f0f0f0;
+  }
+
+  .album-card h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+  }
+
+  .album-card p {
+    margin: 0;
+    color: #666;
   }
 </style>
