@@ -1,5 +1,5 @@
 <script lang="ts">
-  const data = fetch("http://localhost:5173/api/photos")
+  const data = fetch("https://photos-eight-beta.vercel.app/api/photos")
     .then((response) => response.json())
     .then((data) => data.photos);
 
