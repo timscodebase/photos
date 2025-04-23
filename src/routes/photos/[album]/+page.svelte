@@ -1,7 +1,7 @@
 <script lang="ts">
   import { getPhotosByAlbum } from "$lib/utils";
   import type { Photo } from "$lib/types";
-  import { page } from "$app/stores";
+  import { path } from "$lib";
 
   let photos: Photo[] = [];
   let albums: string[] = [];
@@ -9,12 +9,13 @@
   let loading = true;
 
   // Get the album parameter from the URL
-  $: album = $page.params.album;
+  import { page } from "$app/stores";
+  $: album = $page?.params?.album;
 
   // Fetch the list of albums
   async function fetchAlbums() {
     try {
-      const response = await fetch('/api/photos');
+      const response = await fetch(`${path}/api/photos`);
       if (!response.ok) {
         throw new Error(`Failed to fetch albums: ${response.status} ${response.statusText}`);
       }

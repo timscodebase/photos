@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Photo } from "$lib/types";
+  import { path } from '$lib';
 
   let albums: string[] = [];
   let error: string | null = null;
@@ -9,7 +9,7 @@
   async function fetchAlbums() {
     try {
       loading = true;
-      const response = await fetch('/api/photos'); // Relative URL
+      const response = await fetch(`${path}/api/photos`); // Relative URL
       if (!response.ok) {
         throw new Error(`Failed to fetch albums: ${response.status} ${response.statusText}`);
       }
